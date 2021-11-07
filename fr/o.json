@@ -1,0 +1,19 @@
+{
+  "register": [
+    {
+      
+      "email": "argha197.am@gmail.com",
+      "password": "1argha"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "hello",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

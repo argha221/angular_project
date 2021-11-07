@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "productname": "electronics",
+      "Category": "electronics",
+      "subcategory": "electronics",
+      "productquantity": "1",
+      "productprice": 12,
+      "id": 10
+    },
+    {
+      "productname": "xyz",
+      "Category": "xyz",
+      "subcategory": "xyz",
+      "productquantity": "1",
+      "productprice": 12,
+      "id": 2
+    },
+    {
+      "productname": "xyz",
+      "Category": "xyz",
+      "subcategory": "xyz",
+      "productquantity": "1",
+      "productprice": "0",
+      "id": 8
+    },
+    {
+      "productname": "kol",
+      "Category": "xyz",
+      "subcategory": "xyz",
+      "productquantity": "1",
+      "productprice": "0",
+      "id": 12
+    },
+    {
+      "productname": "xyz",
+      "Category": "ghj",
+      "subcategory": "tjk",
+      "productquantity": 12,
+      "productprice": 88,
+      "id": 76
+    },
+    {
+      "productname": "xyz",
+      "Category": "xyz",
+      "subcategory": "xyz",
+      "productquantity": "1",
+      "productprice": "0",
+      "id": 55
+    },
+    {
+      "productname": "xyz",
+      "Category": "xyz",
+      "subcategory": "xyz",
+      "productquantity": "1",
+      "productprice": "0",
+      "id": 13
+    },
+    {
+      "productname": "xyz",
+      "Category": "xyz",
+      "subcategory": "xyz",
+      "productquantity": "1",
+      "productprice": 12,
+      "id": 3
+    },
+    {
+      "productname": "xyz",
+      "Category": "xyz",
+      "subcategory": "xyz",
+      "productquantity": "1",
+      "productprice": "0",
+      "id": 87
+    }
+  ]
+}

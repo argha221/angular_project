@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "productname": "phone",
+      "Category": "electronics",
+      "subcategory": "small electronics",
+      "productquantity": "10",
+      "productprice": "10000"
+    },
+    {
+      "productname": "powerbank",
+      "Category": "electronics",
+      "subcategory": "small electronics",
+      "productquantity": "12",
+      "productprice": "500"
+    },
+    {
+      "productname": "fan",
+      "Category": "electronics",
+      "subcategory": "small electronics",
+      "productquantity": "18",
+      "productprice": "5000"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

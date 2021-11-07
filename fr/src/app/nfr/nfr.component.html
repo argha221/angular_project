@@ -1,0 +1,89 @@
+<div class="page-header header-filter" style="background-image: url('../assets//bg7.jpg'); background-size: cover; background-position: top center; height:100vh;">
+
+    <div class="container" style="height:28vh;">
+        <div class="row">
+
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <div class="card card-login" style="height:64vh;">
+            <form [formGroup]='usform'>
+              <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">Login</h4>
+                <div class="social-line">
+                  <a href="#pablo" class="btn btn-just-icon btn-link">
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                  <a href="#pablo" class="btn btn-just-icon btn-link">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#pablo" class="btn btn-just-icon btn-link">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <p class="description text-center"></p>
+             
+              <div class="card-body">
+                <div class="input-group">
+                   
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                       
+                        <i class="far fa-smile-beam"></i>
+                    </span>
+                  </div>
+                 
+                  <input type="text" class="form-control" placeholder="First Name..." formControlName="name">
+                
+                </div>
+           
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-envelope-square"></i>
+                    </span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email..." formControlName="email">
+                </div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-key"></i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Password..." formControlName="password">
+                  
+                  
+                  
+                </div>
+                   <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-key"></i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Confirm Password..." formControlName="confirmpassword"> 
+                  
+                  
+                  
+                 </div> 
+             
+                <div class="span" *ngIf="usform.get('password').touched && usform.get('password').hasError('required')">It is required field</div>
+                <div class="span" *ngIf="usform.get('password').touched && usform.get('password').hasError('minlength')">Min length of password is 3</div>
+                <div class="span" *ngIf="usform.get('password').touched && usform.get('password').hasError('incorrectpassword')">Password cannot be 12345678</div>
+              </div>
+              <div class="footer text-center">
+                <button class="btn btn-primary start" (click)="Sub()">Save Data</button>
+                <button class="btn btn-primary start" routerLink="cusapi" [disabled]="!usform.valid">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     

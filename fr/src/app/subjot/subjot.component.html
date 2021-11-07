@@ -1,0 +1,8 @@
+<p>subjot works!</p>
+<button class="btn btn-primary" (click)="getdata()">Getdata</button>
+<br>
+<input type="text" placeholder="enter anything" #val>
+<input type="text" placeholder="enter age" #pop>
+<button class="btn-btn btn-primary" (click)="getobs(val.value,pop.value)">Send to Observable</button>
+
+<p *ngFor="let lis of datao">{{lis}}</p>

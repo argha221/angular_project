@@ -1,0 +1,20 @@
+
+
+
+.card .card-header-primary {
+    box-shadow: 0 5px 20px 0px rgb(0 0 0 / 20%), 0 13px 24px -11px rgb(156 39 176 / 60%);
+}
+
+.card .card-header-primary, .card.bg-primary, .card.card-rotate.bg-primary .front, .card.card-rotate.bg-primary .back {
+    background: linear-gradient(
+60deg
+, #ab47bc, #7b1fa2);
+}
+
+.start{
+    background-color: #ab47bc;
+}
+
+.card-title{
+    color:azure;
+}

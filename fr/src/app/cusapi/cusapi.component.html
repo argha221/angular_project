@@ -1,0 +1,371 @@
+<div class="main">
+ 
+<div class="container-fluid">
+  <div class="row">
+<div class="col-2 lp" style="background-color: white; height:60px;">
+
+ <img src="data:image/png;base64,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" style="width:80%;height:60px;">
+   
+</div>
+
+<div class="col-8" style="background-color:#ab47bc;height:60px;color: yellow;">
+  <ul class="nav">
+    <li class="nav-item active">
+    <a class="nav-link " href="123" style="color:white;">Home</a>
+</li>
+<li class="nav-item"><a class="nav-link" href="123" style="color:white;">Products</a>
+</li>
+<li class="nav-item"><a class="nav-link" href="123" style="color:white;">Categories</a>
+</li>
+ <li class="nav-item p"><a class="nav-link" href="#" style="color:white;">Subcategory</a>
+ </li>
+</ul>
+</div>
+
+<div class="col-2 butt" style="background-color:#ab47bc;height:60px;">
+<button  type="button" class="btn btn-outline-warning nstart" routerLink="/nfr" style="color:white;" (click)="exit()">Logout<i class="fas fa-sign-out-alt"></i></button>
+</div>
+    </div>
+</div>
+
+
+<!-- <div class="conatiner-fluid">
+  <div class="row">
+   <div class="col-3" style="height:60px;">
+    <h1>Functions</h1>
+  </div>
+   <div class="col-3" style="height:60px; background-color: white;"></div>
+   <div class="col-4" style="height:60px; background-color: white"></div>
+   <div class="col-2 po" style="height:60px; background-color: white;">
+    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModalScrollable">
+      Add Data
+    </button> 
+  </div> 
+  </div>
+</div>   -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4" style="background-color: whitesmoke;height:50px;">
+      <p class="tx">Functions <i class="fa fa-tasks" aria-hidden="true"></i></p>
+      
+    </div>
+    <div class="col-4" style="background-color: whitesmoke;"></div>
+    <div class="col-4 po" style="background-color: whitesmoke;height:50px;">
+      <button class="btn nstart"><i class="fas fa-id-card-alt"></i>{{ q }}</button>
+      <button type="button " class="btn nstart" data-toggle="modal" data-target="#exampleModalScrollable">Add Data</button>
+      <button type="button" class="btn nstart" (click)="tggle()">Toggle</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" *ngIf="displayname; else elseblock">
+  
+  
+  <div class="card-body">
+    <h5 class="card-title">Content</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          
+          <th scope="col">Product Name</th>
+          <th scope="col">Category</th>
+          <th scope="col">Subcategory</th>
+          <th scope="col">Product Quantity</th>
+          <th scope="col">Product Price</th>
+  
+          <th scope="col">id</th>
+          <th scope="col">Actions</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+
+       
+        <tr *ngFor="let doto of lis | paginate: 
+        { itemsPerPage: 8, currentPage: k }">
+        
+          <td>{{doto.productname | uppercase}}</td>
+          <td>{{doto.Category}}</td>
+          <td>{{doto.subcategory}}</td>
+          <td>{{doto.productquantity}}</td>
+          <td>{{doto.productprice | currency:'INR'}}</td>
+          <td>{{doto.id}}</td>
+          <i class="fa fa-trash" aria-hidden="true" (click)="mod(doto)"   style="font-size:18px;" data-toggle="modal" data-target="#exampleModaldelete"></i>
+          <i class="fas fa-edit" (click)="butt(doto)"  data-toggle="modal" data-target="#exampleModalScrollableupdate" style="font-size:18px;"></i>
+        </tr>
+        <!-- <div class="container-fluid">
+         <div class="row">
+           <div class="col-20" style="text-align:right; background-color:red;height:30px;"></div>
+           <div class="col-6" style="background-color:red;">
+        <pagination-controls 
+        (pageChange)="k= $event" 
+        class="float-right">
+        </pagination-controls>
+      </div>
+        </div>
+      </div> -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12" style="text-align:right; background-color:white;height:30px;"><pagination-controls 
+      (pageChange)="k= $event" 
+      class="float-right">
+      </pagination-controls></div>
+    
+
+</div>
+ 
+</div>
+
+
+<!-- <table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">Product Name</th>
+        <th scope="col">Category</th>
+        <th scope="col">Subcategory</th>
+        <th scope="col">Product Quantity</th>
+        <th scope="col">Product Price</th>
+
+        <th scope="col">id</th>
+        <th scope="col">Actions</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let doto of lis | paginate: 
+      { itemsPerPage: 8, currentPage: k }">
+        
+        <td>{{doto.productname}}</td>
+        <td>{{doto.Category}}</td>
+        <td>{{doto.subcategory}}</td>
+        <td>{{doto.productquantity}}</td>
+        <td>{{doto.productprice}}</td>
+        <td>{{doto.id}}</td>
+        <i class="fa fa-trash" aria-hidden="true" (click)="delete(doto)"   style="font-size:18px;"></i>
+        <i class="fas fa-edit" (click)="butt(doto)"  data-toggle="modal" data-target="#exampleModalScrollableupdate" style="font-size:18px;"></i>
+      </tr>
+      <pagination-controls 
+      (pageChange)="k= $event" 
+      class="float-right">
+      </pagination-controls>
+    </tbody>
+  </table>
+   -->
+   
+
+<ng-template #elseblock>
+  <div class="container-fluid" >
+    <div class="row">
+   <div *ngFor="let data of lis" class="col-sm-3 col-md-3 col-lg-3">
+    <div class="card" style="height:40vh;">
+      <div class="card-body">
+        <div class="head pop">
+          <h5 class="card-title">Content</h5>
+          </div>
+          <div class="bod">
+           <p> Productname:{{ data.productname}}</p>
+           <p>Category:{{data.Category}}</p>
+           <p>Subcategory:{{data.subcategory}}</p>
+          <p class="card-text"></p>
+        </div>
+      </div>
+        
+       
+   
+
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+</ng-template>
+
+<form [formGroup]="usform">
+<input type="text" placeholder="Enter productname" formControlName="search">
+</form>
+<button class="btn btn-danger" (click)="getid()">Search By ProductName</button>
+<div *ngFor="let data of pub">
+  <td *ngFor="let data of data">Price Rs {{data.productprice}} </td>
+</div>
+<button class="btn btn-primary" (click)="fil()">Check</button>
+<p>pop {{errormsg}}</p>
+
+
+
+
+
+
+<!-- <p *ngFor="let data of pil">{{data}}</p> -->
+
+
+
+
+
+
+  
+
+  <!-- <button type="button " class="btn btn-outline-warning"  (click)="update('1')">Update data</button> -->
+
+  <!-- <button type="button " class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModalScrollableupdate" (click)="butt('1')">update data 2</button> -->
+
+ 
+  
+  <!-- <button  class="btn btn-primary" (click)="delete('sohuny6')">delete</button> -->
+
+<!--  
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Add Product</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="usform">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Product Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Enter Product Name" formControlName="productname">
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Category</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Category" formControlName="category">
+            </div>
+            <div class="form-group">
+              <label for="3">Subcategory</label>
+              <input type="text" class="form-control" id="3" placeholder="Enter Subcategory" formControlName="subcategory">
+            </div>
+            <div class="form-group">
+              <label for="4">Product Quantity</label>
+              <input type="Number" class="form-control" id="4" placeholder="Enter Product Quantity" formControlName="productquantity">
+            </div>
+            <div class="form-group">
+              <label for="5">Product price</label>
+              <input type="Number" class="form-control" id="5" placeholder="Enter Product Quantity" formControlName="productprice">
+            </div>
+            <div class="form-group">
+              <label for="6">Product ID</label>
+              <input type="Number" class="form-control" id="6" placeholder="Enter id" formControlName="id">
+            </div>
+            <button type="submit" class="btn btn-outline-warning start" (click)="submit()">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary start" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-warning start" (click)="resetform()">ResetForm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- second modal for update -->
+
+  <div class="modal fade" id="exampleModalScrollableupdate" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Add Product</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="usform">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Product Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Enter Product Name" formControlName="productname">
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Category</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Category" formControlName="category">
+            </div>
+            <div class="form-group">
+              <label for="3">Subcategory</label>
+              <input type="text" class="form-control" id="3" placeholder="Enter Subcategory" formControlName="subcategory">
+            </div>
+            <div class="form-group">
+              <label for="4">Product Quantity</label>
+              <input type="Number" class="form-control" id="4" placeholder="Enter Product Quantity" formControlName="productquantity">
+            </div>
+            <div class="form-group">
+              <label for="5">Product price</label>
+              <input type="Number" class="form-control" id="5" placeholder="Enter Product Quantity" formControlName="productprice">
+            </div>
+            <div class="form-group">
+              <label for="6">Product ID</label>
+              <input type="Number" class="form-control" id="6" placeholder="Enter id" formControlName="id">
+            </div>
+            <button type="submit" class="btn btn-outline-warning start" (click)="sub()">Save data</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary start" data-dismiss="modal" (click)="update()">update</button>
+          <button type="button" class="btn btn-outline-warning start" (click)="resetform()">ResetForm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <!-- modal for delete -->
+  <div class="modal fade" id="exampleModaldelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you Sure to delete this item?</p>
+        </div>
+        <div class="modal-footer"> 
+          <button type="button " class="btn btn-primary z" (click)="delete()">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <div class="col-12" style="background-color:black;">
+     
+      <ul class="nav  justify-content-left">
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAADNCAMAAAC8cX2UAAABxVBMVEX///8AAAD//v8pKSng4OAlJSXj4+MsLCz///3m5ubd3d3y8vI4ODgfHx8ZGRn29vYxMTEUFBT4/f8/Pz8Aw/8Amt0AjNHz8/NHR0c0NDTT09OTk5NfX18JCQkdHR3s7OwAWKZPT08AnN4Ag8mwsLDIyMjU1NREQUMAfMQAcrsAbrd8fHxqamqFhYVVVVVLS0uhoaEAtvUAYq8ASJwAU6EAQZS8vLwAbb0AADYAAFyk5/7k9fwAquoAu/ozJh8AnOLO6PMAABkAO5haoNMAZK8AKoTc5O4ARpwAAAs7mtUAP5oAAHUAADwAADG78v9s2P42zP6xqKLP+P+I1fa03fOA4v9Juux7yO12laRnrdVRRT+Uh4Q3TVmq4/1fxPAIs+YlEQAVjbgca4whDABAeIuCxexsgIogQVQuWGpom78Ab6VENi07qOGfy+lgf5YAT3gAIDkARYhQh7wAAEuVtNQTdKMuJBsmNUAOUYbC0+YVPWKkttKClb6FqdJjkMFZeK8AImwAF3dCdbNDWJl8j64NN1sAOHpWbaMAJF6hrMpxgbABFCSlscI8gr64xd1zf6RYZ5EAE2I5TICNlagVJk5GUXJaXmvdpvppAAAQy0lEQVR4nO2ci18T157Az0wITB5kkomEvBPITEjIg5CERB2QwZDBgNb2ytWLa70+1rVbwSrN1U6BUMDVhRba7evv3d85MwlB2VZrK6N7vn4SJvPqfOecOY/fOVOEKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCiUDxOWw+jLHAu/EcfJHyXtJ3tVfzkckmVZMMThD8d9dPmUkg/zJ3xdfzGcfOrUqbO6NkgLZz+emjr7idMZOukL+2sxtFny42+X4cepj3u9I36ndMIX9qfA6k9w+ynuQp7C2jilz358agpr/y3rHPGPDMXw7pxw+Yq+2+LKe3gjOI4FMfZVa0ObU/6uO5+a+nvF4h0Z8Xuz+GYhefIqKF9bHpj+x7ned3/dbwn2PSyyu5Gn4GFGypQuDcT8Tq93xDviFvFR8uTk1WEfsHTdnXnnl/3WBNXLioyO0x4fHz/LKeNTBh/9m8XpvHFjxOt1JuUrN4XJgYEBsB7OWM/1VxD77q/8beDHCp9Oj99clMkvXE9xrP60L2JtpEyOY6bGL9ujgcCDfy4/AO28PDx9dRhL+3z/uPX09jn/+1atFUacwZvDw9OTV6/IHMnzRFq+Mj45OT75qTCua4+Py3mL+9ztU1O3wTsQUoiyL5GoXX/yz6k7d0PHFYrmpcfp947Jk8OTYD589YoikBRXbsIazNmbkwaffuJyP/l3KNim7oB3n3QvAc6JlO8/mIIyNXz/rv2458S0ZKFsdoeU6WGd6eVri8KnV4eHDdnxtvXVmNXSn+cuT02Nj3/2wOn0xhognUr/J5Oz2dVJXzR80iZvQiUwch3SLnhtemDAEJ8ebt+Djvzk5LCcdVn7eqXYx5DdJ28EnIGskgLrhn9oMBaLKdOfM+JJu7w+g2PeB7ch8UYcy76BDsOvMH1FYqyM1BMMOrD3ciDgtHyyUkynHzK9PEbxffEkdtI2r00o8ODO+PgNtzUj+7q8u8HWA5N8wMXkBpN2u10+BTn/9jnwttfirbsSEgRWEDgl9Sh70javS9LtvAEF9bUH7qi0kvB1c9RdCTGRPN+D6ZWnINPfORdw+9X9oRCSl4fvJdICWpxlgift83pwYaezMTl52Sb1WwKx5aPeXfq+e3bGE7XFbISYgsu5z84FLDkJyjHZl1oqzgkcWnx8nX0vSnPR8uBf05M3bZJN9LgyAq6QfMe5Dwh5hpH4mMGgjMu4++cC1gLcOmGpttJaxcIrXxbeB21H4MFn09NXY3Z7cjAXiVQW04kucFPEaJIsigyTQw7HoEOHV6CWH3a73RYbpHZqdqNcJ9V9c+Z9KNUy5274pq8O9mL4sMcaW0qnUolXSNViDJNn+S44BbQbfW5LnkVy6fzq1oKAW7VoI3/STr9P0BLY9y072lm3jwmjBHh3YWjLGYaxIZ5XFUWRB+FL4blFqNv/dcsdDSGkqg5VRXqP/WHlpK1+D37s3OeJhtzJuPYIIyqj6dRRc2iRrEgMQzpYtWK1WltM+aanFSjABgam7zzpi3RHGMA75zgxodejcOt+yidznYyLRCYaa0ILpINu3eD7GD181iqOjtaUFDztCtyFFSjk7z+xeLs9OTRo8kqs1/I07ZNZFpoaUBpDe4NFIcjmq7Ojo6Pp9GjHvQpV9ph+SCs+O9tSqgmsTbx9vqeW/q5GyntQjGeso2noYnNL+42le8vLV0EeZRlRxtpdFDdsTMSmH7J6vjS3qpWq1SpObQ5dg+rOYol0t8XN3fnkUOXuV6MKvspWsVpbSviGoQZCg17GtgJJagDWsymostuPr6ppmirAlyboK6Dv+fkTazR5UhpvDH/96yKxRqul+GqtmvIRExszhLNyEf7pxLUK04mLr62vr6+pG0A7EgP364sn/WPvTWQl9Kh8gDiWhSZGq9VcqS0t6QkoMQVhNB4vGsRbPHNYFW/Wz5/f1OZhs0J+c0hYTiS+eBLJnYTCH8DeXzpAJIyCk7DZhAQ08m2B6dXm4jrFeFzIMIcl9WZ9YmIPa8cVfQX2TiXuP2FMX1tjOBT+pmks4STcbJXio4Y2yvjRRgnMyvApHSSZrnr5xVa9vqfVS+Wy0lknNFIpS9Rqe3dX/0eB8uzLph7f5YjL5upcebatjfwhtA1mQGkVWbsHvNZ3dnbWtZ3t7W31cKXgS33e7zF9RAlMY4+aRk0D3+Cyt769vd/RjkXs6hzRnlMLY92HsgJiWQT1vHBYQ0ObPJH+6hZTeHcGfwwOZZ6161d92Bp/ugaDkk5ubb5ULs03bZ5Xm5ocOtIsgTPIqfQXtyImb51xSPrpd3YRc2hvvjQxi/KvN6SnpNL3I4HBt7+2P5kjvWA+9LvDNrmkPDFR1yovV0ysw2YP6tjb58Qpr1SrTxnzDYNJoa7MmnyNZMnx2tb6YKe1zfcEK4VM2O+2epg2EYs/W5DIeTmkjc72mzBgnAlXOi0p9jXazY4CWhdCOEFtQTEX9lsiTMTjcel4MJFIBMtbwhUH8Y5/dddjutHeWHgoLBop/lqdBdg3KFZyYa+LYTzRfkI0Gm1LY2sCVs/gSTwrxa+YEdP1waR8OJ8N2V+v8cz3BiFLB6KeqFVHl37JGfJ5O8NnIF80y//FmG/4r5APh8ND2ZDk+I0CjXfYJBD2uiCBrRbg0NmQjnRUj1LA3o+gkWoybTaHvcP5oaFMSAzGHHyXPT/oiNklMQTC/Vi3D+iSJs5gjPWsznCuIFYkKWi3ByUJCrohC/EOO6BN+63LdLUYn4F8jhka8/u9Q+FsJpMLhUK5TCYbHvNiS9B1Y3Tp7syNy2+XNyNK9uOySm8l1wc3pBdtTDBZ00UaBrNDujYwhtW9Xmc3gUCg43wo7YJE9nhzYrCrWBAGZVU9wKiqQ2/UJkNWJolaz0kj1VzefM7flgZrPxHvuLedu6SJciRckAYP01g92GhtzpYnJibmz9cJj1+sr+E6gqvke4TV/2bsZktuKNf8Y9j5FeljEhor92ULnZa2IGtrrdHS3NzcBMGQrm9tLQA7u7hPZkPC9kWnCUMtybDTf3xCdz/RUXiWLRnxsLpT1za246W5EgGarfV6eXN9d+1AU1VVO1jb3ZtYWNgjnVFh+0LGZJkcw4pjTq//FWd3O6H7ocCO+DNip8ElaM3VOHS9Sf+7BFm7BJlaFV4q2ljhYK9OxIUd89VimEExbA04O7m7k9BWK07kvmyoEmunsqw192fjesihDMr18t6u2qn3Dx9hfX4Tf7CHA1XqY8acoRY2GQo7jeqZ+Pa7oBli9Wdzld5OvatqG9tFHFkq47Sem5+P7zVVoessXFeatu8A2UF9bt7xv1gQt07CYS80YrKZXKFi76QxJPJKa7tYxsG0OE7m+fPx1prK23p77B1It3MwKVVEKdiLk7q9AVJavWj6qdcOvnvSpKBoK7V9I2CMnUvzpdnNpoorKJvTO9IhUMD99iH9OfHDPUgGRqC4gC1j2QrSZkweaiEIiqIqKytLtf1UFYxndWUouIvb65qesTmijcX8WM/rDiE+7B7xQtHgdA7BDjHnyIgTignviNdaQAffmn3cE8/CUFYaiXS1SILEUFyXyvHi6OrGgUrGPuC5JTNSbHlozmZAOgx/8iIq9HkD4UKlEgrjsEos4HXmKhUxHIDC0oG+M30k1SiZOFnRNG2leaBBZSx3bT4yC8fhdPYZMdJwIGBEX3ChEHM7LSTwlg043ZDFC6aPpL4JMXfAopdX7JDb3TXEG7MErCSoVLA4LbjSD71fU1B/G97pbg8YhPtgsVPfxazufqKdsVj1DI5DUh+MeKCv39AueNx90b6Q8VZYrL8vKvIOe8Zq9eotPF78cKyR2+oytNmwB5o6Lk+WWMZc8COAozJhUqVz3Ackjdg+q6fdFuEzjAs6Lh4PHu6MeaxWVyQSiUKb74MqzQisJRo5bIJJWcYD3XImiQfO+l1ZsRDKM9EoY/pG2pvC97uOSPVmIq7+CJRhMcalDw9IONRo/sbKm2GLeJijI0QS4/JY+UNtlGE8jOnGCd4SG/OyNoKM7oqBtscY683Bkjl7nn8cGxNpa7er7DwTseDUjui5Pwl92KiJ4krsUL+1jREexpDYSiAQIFEHEnWBbpR/xO/346DbGI445vWAK07M3kPtsDtbEMWcF9ZkENH2i4XMGB4rMVVR3ttzLL3HY3sF0vvEIz/kbPzh2GcfbOnpGhoylfWfQhKPf5DGiL0z4JvF90MyrK3eUM9JX+QrdCZgkLcZWRIMIu/zoq7QGHfkqzPHhXx4yAUxfUe7VAhlcqJEXmrGG5KAjTzVpnvbs6vJSMRZ491GThcjy/oUJlb3xHsYr3dzndjhy1rdzdBjXw0+cQQ9CijIMplthGcW4z8khQRjrjFBX8AaeC3Hdo7Ef+Vmc0UQZLy3cTryzgRsxPdVEP7P//y7B/SEew2f7x4sLzYSicYKLNxr1EBYwSsXa/hNbKFhICzj7yUFoaXGIrgsNpZgf2UJzqDIxVI8nk4XhRVYySGl5kv57oGr0mjArZAbNRN5c0hNFNP76SaIFEcb+7NF8GhWq2CvFWvwGW3UEhtCan8/nfb59tF+tVFLVUdltIp3QSt4d61aTe1Xlc3WGokuCkvGyv1GtdoQ4BzVGmSF6r6JtJGwX27JOI9q5biGhGa8rKGNeHFWRlqphjbKG+QREAR1FFwFYR92ktOwz34ZazfLNSQXy004gbqOp2zuHeyyTThQnoWVSIvD8VqpiA+Km0pbO1/WL2d1fgMn/vZcC22UVudbsAWW5mY1vVRTy0UZD2bNaQhtz6vwWYODmrDfxvwqmV7LI3bnzDNYuQYHNue3Edk+K8B55uKCEJ81k/Z6fZuU5EKpruESeqM+C+sOyvUDbWEDqRPn6zt4rjUslVU8lnV+TVuvQ8K+qGPttXoL7cASpw/9PDz9HZ6dvNWCdN/AR2nnJxxwns36ulCKm0l7b+sF1NcsitW3NFzA7W49RusL2trChLawC4n8Ymtraw8XAfUJol3fWljYgeN2FrDs7sIemtjaNap96IDgthhe+QIfjI+qg/a6urWlTTw2k/azM9+QqaXC8zPk6r8/8wP66cwB+uHMD998j1doP/zPGRBWv3mOtX88s3vw45nvEWwHL7QLi+SnXk3r2t99+T0+HOedgzPPee3LZ7Dfj89/NJN28NJFfbLpw9Nfw3XZfr70HfrpUgX1nj598aG+y8+QdZH688/QcRR+uSSh5OnTdvTsNN76EO99+mJ7EqqhfekhfC7iAd5fYFGa+Qmxv5y+9LWJemAcyjDMrwUxG7NduPC0Ij5ifkUohOf9Vxgmi8SQJBVmGDu0Ome+BW3+KZ5A/yt0PILMTChYuDATQ+zTCzNZsQDHEW18xizibzAzhcoN5lEMGubQTbHNXHhqIm2EAx8YB6qQ3lOeb1/9GHQvhsg23KmUGCzPk7BBAb/lmCObRHiie8fIhEvUTu0sfpHENkJWJvH988PZQkzEXNqopyKKOJs6Kjl9VopdwoEQh2RHSTGXE8lIxqAkwWWzQdzJ4MkybCPTGzi8KIo4NB7K43hpj0TehZJCIYmMCEkkai6Zc7zT6CsYHYqXuw6/0ZM4vgvS+T/Jcd2/zAT36q+jPSau62Os4F45pOtX1ygA167SP6AxIAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBTK/yv+Fw6xDgjuGqPCAAAAAElFTkSuQmCC" style="width:100px;height:80px; padding-bottom: 30px;">
+          <li class="nav-item">
+              <a class="nav-link active" href="123">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="123">Products</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="123">About us</a>
+          </li>
+           <li class="nav-item p"><a class="nav-link" href="#">Logout</a>
+           </li>
+              
+      </ul>
+  </div>
+  </div>
+  </div> -->

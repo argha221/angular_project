@@ -1,0 +1,27 @@
+.what{
+    font-size:16px;
+}
+.widget{
+    display:inline;
+}
+.k{
+    display:inline;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color:black;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link  {
+    color:red;
+}
+.dropdown:hover .dropdown-menu {
+    color:red;
+   
+ }
+ .f{
+     margin-right:150px;
+ }
+ .inpot{
+     padding-top:100px;
+ }

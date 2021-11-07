@@ -1,0 +1,36 @@
+<form [formGroup]="usform">
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+
+    <div class="form-group">
+    <label for="12">Enter Email</label>
+    <input type="text"  class="form-control" placeholder="Enter email" id="12" formControlName="email">
+
+    <br>
+    <label for="13">Enter Password</label>
+    <input type="text" class="form-control" placeholder="Enter password" id="13" formControlName="password">
+<br>
+ <div class="pop" formArrayName="items">
+    <div *ngFor="let data of usform.controls.items['controls'];let i=index" [formGroupName]="i">
+        <label for="{{i}}">Skills</label>
+        <input class="form-control" type="text" formControlName="skills" id="task{{i}}" placeholder="enter your skills">
+        <label>Have Certficate(required)</label>
+        <input  class="form-control" type="checkbox" formControlName="certificate">
+        <br>
+        <button class="btn btn-primary" (click)="remove(i)">Remove</button>
+        <br>
+    </div>
+</div> 
+<br>
+    <button class="btn btn-primary" (click)="add()">Add Skills</button>
+</div>
+
+
+
+
+</div>
+<button class="btn btn-primary" (click)="submit()" >Submit</button>
+</div>
+</div>
+</form>

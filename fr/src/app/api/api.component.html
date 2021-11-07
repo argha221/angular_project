@@ -1,0 +1,176 @@
+<h1>Dummy Api test</h1>
+
+
+<!-- <p *ngFor="let lit of listp">
+    {{ lit.name }}
+    {{ lit.username}}
+</p> -->
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone no</th>
+        <th scope="col">Company Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lit of listp | paginate: 
+      { itemsPerPage: 4, currentPage: p }">
+        
+        <td>{{lit?.name}}</td>
+        <td>{{lit.username}}</td>
+        <td>{{lit.email}}</td>
+        <td>{{lit.phone}}</td>
+        <td>{{lit?.company.name}}</td>
+      </tr>
+      <pagination-controls 
+(pageChange)="p = $event" 
+class="float-right">
+</pagination-controls>
+    </tbody>
+  </table>
+
+<!-- 
+  <form [formGroup]='userform'>
+    <div class="h">
+       <div class="form-group">
+       <label for="1">enter name:</label>
+       <input type="text" id="1" placeholder="Enter name" formControlName="name" >
+       <div class="p">
+       <!-- <span *ngIf="fur.get('name').hasError('required') && fur.get('name').touched">Name field is required</span>
+       <span *ngIf="fur.get('name').hasError('minlength')">minlength 5 is required</span> -->
+       <!-- </div>
+       </div>
+    
+       <div class="form-group">
+    
+       <label for="2">enter email:</label>
+    
+       <input type="email" id="2" placeholder="Enter age" formControlName="email">
+    
+       <div class="p"> -->
+       <!-- <span *ngIf="fur.get('age').hasError('required') && fur.get('age').touched">minimum Age 18 field is required</span>
+       <span *ngIf="fur.get('age').hasError('min')">min age 18 is required</span> 
+        -->
+      
+        
+        <!-- </div>
+       </div>
+    
+      <div class="form-group">
+       <label for="3">enter password:</label>
+       <input type="text" id="3" placeholder="Enter password" formControlName="username">
+    
+       <div class="p">
+       <!-- <span *ngIf="fur.get('password').hasError('required') && fur.get('password').touched">required field</span>
+       <span *ngIf="fur.get('password').hasError('minlength')">min length 5 required</span> -->
+       <!-- </div> -->
+<!-- 
+       <div class="form-group">
+         <label for="4">Enter Ph no</label>
+         <input type="number" id="4" placeholder="Enter your number" formControlName="phoneno">
+       </div>
+
+       <div class="form-group">
+        <label for="5">Enter company name</label>
+        <input type="text" id="5" placeholder="Enter Company Name" formControlName="company">
+      </div>
+       
+       <br>
+       
+       <div class="form-group">
+        <button (click)="submit()" [disabled]="!userform.valid">Submit</button>
+        </div> -->
+
+<!-- 
+        <div class="lo">
+            <button (click)="resetform()">Reset</button>
+        </div>
+    </div>
+    </div>
+    </form> --> --> -->
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Button trigger modal
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  ADD DATA
+</button>
+
+<!-- Modal -->
+
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     
+        <div class="form-group"> 
+       <div class="modal-body"> -->
+        <form [formGroup]="userform">
+        <div class="form-group">
+       <label for="12">Enter your name:</label>
+        <input type="text" id="12" formControlName="name">
+        <br>
+        <label for="13">Enter Username:</label>
+        <input type="text" id="13" formControlName="username">
+        <br>
+        <label for="14">Enter Email:</label>
+        <input type="email" id="14" formControlName="email">
+        <br>
+        <label for="15">Enter Ph No:</label>
+        <input type="Number" id="15" formControlName="phoneno">
+        <br>
+        <label for="16">Enter Company name:</label>
+        <input type="text" id="16" formControlName="company">
+        
+      </div>
+    </form>
+      <div class="modal-footer">
+        <div class="form-group">
+        <button type="button" class="btn btn-secondary" (click)="resetform()">Reset</button>
+        <button  class="btn btn-primary" (click)="submit()" [disabled]="!userform.valid">Save changes</button>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div> 
+
+<button class="btn btn-primary" (click)="onrequest()">Request data</button>
+
+<p *ngFor="let p of frdata">
+  {{p.name}}
+</p>

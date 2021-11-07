@@ -1,0 +1,98 @@
+.modal-notify .modal-header {
+    border-radius: 3px 3px 0 0;
+}
+.modal-notify .modal-content {
+    border-radius: 3px;
+}
+
+.modal-header{
+    background: linear-gradient(
+        60deg
+        , #ab47bc, #7b1fa2);
+        color:white;
+}
+
+.form-control:focus {
+    border-color: linear-gradient(
+        60deg
+        , #ab47bc, #7b1fa2);
+    box-shadow:linear-gradient(
+        60deg
+        , #ab47bc, #7b1fa2);
+}
+.start{
+background-color: #ab47bc;
+color:white;
+}
+
+ li{
+    text-align:center;
+    display: inline;
+    padding-right: 60px;
+    padding-top:10px;
+    padding-left: 30px;
+    color:rgb(255, 197, 72);
+} 
+
+a{
+    color:black;
+    font-weight: bolder; 
+}
+ a:hover{
+     color: #ab47bc;
+ }
+
+.lp{
+    text-align:left;
+    
+}
+
+.butt{
+    text-align:right;
+    padding-top: 10px;
+}
+
+.po{
+    text-align: right;
+    
+    padding-right: 15px;
+}
+
+.tx{
+    padding-top: 10px;
+}
+
+i{
+    padding-top:10px;
+    padding-right:5px;
+    padding-left: 10px;
+}
+
+i:hover{
+color:red;
+}
+.nstart{
+    border:solid 2px #ab47bc;
+    color:black;
+}
+.nstart:hover{
+    background-color: #ab47bc;
+
+}
+.z:hover{
+    background-color:red;
+    color:white;
+}
+
+.pop{
+    background-color:#ab47bc;
+    color:white;
+    padding-top: 30px;
+    text-align:center;
+}
+
+@media (max-width:675px) {
+    .card{
+        display:block;
+    }
+}

@@ -1,0 +1,27 @@
+<html>
+<body>
+   <div class="main">
+<p class="txt" >Smart Component</p>
+<button class="btn btn-primary" id="1" (click)="toggle()">Toggle</button>
+<div class="col-12 alert alert-primary l" *ngIf="selectedvideo" role="alert">
+   The id you selected is: {{selectedvideo}}
+
+</div>
+<div class="container-fluid">
+<div class="container">
+
+<app-dumb [video]="videos" (selecteddata)="getchilddata($event)"></app-dumb>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+   $(document).ready(function() {
+      $("#1").change(function() {
+        $("body").toggleClass("bg-secondary");
+        $("h1").toggleClass("bg-primary");
+      });
+   });
+</script>

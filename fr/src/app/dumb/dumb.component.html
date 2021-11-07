@@ -1,0 +1,29 @@
+
+<div class="row">
+<div class="col-lg-3 md-3 sm-3 mb-4" *ngFor="let data of video| paginate: 
+{ itemsPerPage: 8, currentPage: k }">
+    <div class="card">
+        <div class="card-body pt-0 pl-0 pr-0">
+          <h5 class="card-title pl-0 " style="background-color: rgb(89, 0, 179)
+          ; color:white; text-align: center;">Details</h5>
+          <p class="l">Userid:{{data.userId}}</p>
+          <p class="l">Id:{{data.id}}</p>
+          <p class="text-truncate hello l" style=" text-overflow: ellipsis;">Title{{data.title}}</p>
+          <button class="btn btn-primary btn-sm btn-round ml-5" style="background-color: rgb(89, 0, 179);" (click)="print(data.id)">ViewID</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12" style="text-align:right; background-color:white;height:30px;"><pagination-controls 
+      (pageChange)="k= $event" 
+      class="float-right">
+      </pagination-controls></div>
+    
+
+</div>
+ 
+</div>
